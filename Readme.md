@@ -101,3 +101,15 @@ if($str == $checkStr){
 
 ?>
 ```
+## 🔹 7. Swap Two Number without 3rd varibale
+``php
+<?php
+$a= 6; $b= 5;
+echo "Before Swap $a,$b";
+$c = $a+$b;
+$a= $c-$a;
+$b = $c-$b;
+echo "After Swap $a,$b";
+
+?>
+```
