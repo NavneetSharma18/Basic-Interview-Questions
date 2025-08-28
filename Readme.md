@@ -1,5 +1,6 @@
 # PHP Coding Exercises 🚀
-### Basic Interview Assigments
+### Basic Interview Assigments 
+#### By Navneet Sharma
 ---
 
 ## 🔹 1. Sort Array ASC (Swap Elements)
