@@ -25,7 +25,6 @@ print_r($a);
 
 🔹 2. Fibonacci Sequence (Upshift Numbers)
 
-```php
 <?php 
 $num = 9;
 $a = 0; $b = 1;
