@@ -88,3 +88,16 @@ echo $revStr;
 
 ?>
 ```
+## 🔹 6.Palindrom String = MADAM
+```php
+<?php
+$str = 'madam'; //Navneet
+$checkStr = strrev($str);
+if($str == $checkStr){
+    echo "Palidrome";
+}else{
+    echo "Not Palindrome";
+}
+
+?>
+```
