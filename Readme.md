@@ -60,3 +60,15 @@ for($i=0; $i<$num; $i++){
  echo "First Largest".$firstL."\n";
  echo "Second Largest".$secondL."\n";
 ```
+## 🔹 4.Factorial number 
+
+<?php
+$num = 5;
+$fact = 1;
+for($i= 0 ;$i<$num;$i++){
+   $fact *= $num-$i;
+}
+echo $fact;
+
+
+?>
