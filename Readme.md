@@ -22,9 +22,10 @@ for($i=0; $i<$n; $i++){
 }
 print_r($a);
 ?>
+```
 
 ## 🔹 2. Fibonacci Sequence (Upshift Numbers)
-
+```php
 <?php 
 $num = 9;
 $a = 0; $b = 1;
@@ -36,3 +37,26 @@ for($i=0; $i<$num; $i++){
     $b = $c;
 }
 ?>
+```
+## 🔹 3.Largest & second number => downShift number
+
+```php
+
+<?php
+ $a = [4,7,9,20,10,13,8];
+ $count = count($a);
+ $firstL = 0; $secondL = 0;
+ 
+ for($i=0;$i<$count;$i++){
+     $num = $a[$i];
+     if($num > $firstL){
+         $secondL = $firstL;
+         $firstL = $num;
+     }elseif($num > $secondL){
+         $secondL = $num;
+     }
+ }
+ 
+ echo "First Largest".$firstL."\n";
+ echo "Second Largest".$secondL."\n";
+```
