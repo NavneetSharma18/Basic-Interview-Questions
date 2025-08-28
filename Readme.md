@@ -1,16 +1,39 @@
-### Sort Array ASC => swap element
+# PHP Coding Exercises 🚀
 
-$a = [10,90,20,70,50,20];
+A collection of simple PHP programs with examples and outputs.
+
+---
+
+## 🔹 1. Sort Array ASC (Swap Elements)
+
+```php
+<?php
+$a = [10, 90, 20, 70, 50, 20];
 $n = count($a);
 
-for($i=0;$i<$n;$i++){
-    for($j=$i+1;$j<$n;$j++){
-     if($a[$i] > $a[$j]){
-         $temp = $a[$i];
-         $a[$i] = $a[$j];
-         $a[$j] = $temp;
-         
-     }
+for($i=0; $i<$n; $i++){
+    for($j=$i+1; $j<$n; $j++){
+        if($a[$i] > $a[$j]){
+            $temp = $a[$i];
+            $a[$i] = $a[$j];
+            $a[$j] = $temp;
+        }
     }
 }
 print_r($a);
+?>
+
+🔹 2. Fibonacci Sequence (Upshift Numbers)
+
+```php
+<?php 
+$num = 9;
+$a = 0; $b = 1;
+
+for($i=0; $i<$num; $i++){
+    echo $a . "\n";
+    $c = $a + $b;
+    $a = $b;
+    $b = $c;
+}
+?>
