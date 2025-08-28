@@ -1,6 +1,6 @@
 # PHP Coding Exercises 🚀
 
-A collection of simple PHP programs with examples and outputs.
+A collection of simple PHP assigment interviews
 
 ---
 
