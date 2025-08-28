@@ -1,47 +1,5 @@
 # PHP Coding Exercises 🚀
-
-A collection of simple PHP assigment interviews
-
-Write a PHP program to print the first 10 natural numbers using a loop.
-
-Write a function to find the factorial of a number using recursion.
-
-Write a PHP program to reverse a string without using strrev().
-
-Check whether a given string is a palindrome.
-
-Write a program to find the sum of digits of a number.
-
-Write a PHP script to find the largest and smallest element in an array.
-
-Implement a function to sort an array without using sort().
-
-Write a program to print Fibonacci series up to N terms.
-
-Check whether a given number is a prime number.
-
-Write a function to count vowels and consonants in a string.
-
-Write a program to check Armstrong number.
-
-Write a function to remove duplicate elements from an array.
-
-Write a PHP script to swap two numbers without using a third variable.
-
-Write a program to find the second largest element in an array.
-
-Implement a program to check if two strings are anagrams.
-
-Write a function to convert a decimal number to binary.
-
-Write a program to find the GCD (Greatest Common Divisor) of two numbers.
-
-Write a script to merge two arrays and remove duplicates.
-
-Write a program to reverse each word in a sentence.
-
-Write a function to check whether a number is perfect (sum of divisors = number).
-
+### Basic Interview Assigments
 ---
 
 ## 🔹 1. Sort Array ASC (Swap Elements)
