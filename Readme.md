@@ -73,3 +73,18 @@ echo $fact;
 
 ?>
 ```
+## 🔹 5.Reverse String = str_split convert str to array 
+```php
+<?php
+$str = 'Navneet';
+$spltStr = str_split($str);
+$len = count($spltStr);
+$revStr = '';
+
+for($i = $len-1; $i >=0; $i--){
+ $revStr .= $spltStr[$i]; 
+}
+echo $revStr;
+
+?>
+```
