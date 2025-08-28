@@ -23,7 +23,7 @@ for($i=0; $i<$n; $i++){
 print_r($a);
 ?>
 
-🔹 2. Fibonacci Sequence (Upshift Numbers)
+## 🔹 2. Fibonacci Sequence (Upshift Numbers)
 
 <?php 
 $num = 9;
