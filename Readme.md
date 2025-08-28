@@ -61,7 +61,7 @@ for($i=0; $i<$num; $i++){
  echo "Second Largest".$secondL."\n";
 ```
 ## 🔹 4.Factorial number 
-
+```php
 <?php
 $num = 5;
 $fact = 1;
@@ -72,3 +72,4 @@ echo $fact;
 
 
 ?>
+```
