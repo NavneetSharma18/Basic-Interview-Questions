@@ -113,3 +113,27 @@ echo "After Swap $a,$b";
 
 ?>
 ```
+## 🔹 8. Remove duplicate from array
+```php
+<?php
+$dupliArr = [10,20,40,60,30,20,60];
+$len      = count($dupliArr);
+$duplicate = false;
+$uniqArr = [];
+
+for($i=0;$i<$len; $i++){
+    for($j=0;$j<count($uniqArr);$j++){
+       
+        if($dupliArr[$i] == $dupliArr[$j]){
+            $duplicate = true;
+            break;
+        }
+    }
+    if(!$duplicate){
+        $uniqArr[] = $dupliArr[$i];
+    }
+}
+print_r($uniqArr);
+
+?>
+```
