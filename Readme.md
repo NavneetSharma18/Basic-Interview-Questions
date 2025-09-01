@@ -141,3 +141,41 @@ print_r($uniqArr);
 ### 1. Class & Object:- 
     we can say class is just like a blueprint/structure of object, similarly for home we can build as many home as we want via using the same blueprint. We can defined the mehtod and property inside the class
     Object is the instance of class we can assing value to class property via using object. If we want to use class mehtod or property then we need to first create an object of that class
+
+### 2. Encapsulation:- Where Data and property bundle together and access is controller through access modifier (Public, Private, Protected)
+```php
+    class BankAccount {
+        // Properties (data)
+        private $balance;
+    
+        // Constructor
+        public function __construct($initialBalance) {
+            $this->balance = $initialBalance;
+        }
+    
+        // Method to deposit money
+        public function deposit($amount) {
+            if ($amount > 0) {
+                $this->balance += $amount;
+            }
+        }
+    
+        // Method to withdraw money
+        public function withdraw($amount) {
+            if ($amount > 0 && $amount <= $this->balance) {
+                $this->balance -= $amount;
+            }
+        }
+    
+        // Method to get current balance
+        public function getBalance() {
+            return $this->balance;
+        }
+    }
+    
+    // Usage
+    $account = new BankAccount(1000);
+    $account->deposit(500);
+    $account->withdraw(200);
+We can't access balance directly $account->balance that will hide the internal state  
+```
