@@ -136,3 +136,8 @@ print_r($uniqArr);
 
 ?>
 ```
+
+# 🔹 Oops and other concept
+### 1. Class & Object:- 
+    we can say class is just like a blueprint similarly for home we can build as many home as we want via using the same blueprint. We can defined the mehtod and property inside the class
+    Object is the instance of class we can assing value to class property via using object. If we want to use class mehtod or property then we need to first create an object of that class
