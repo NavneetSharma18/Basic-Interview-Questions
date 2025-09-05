@@ -230,3 +230,36 @@ $obj->sayHello();   // Hello from A
 $obj->sayHelloB();  // Hello from B
 
 ```
+### 5. Abstraction:- Abstraction means hiding the implementation details and showing only the essential features of an object.->Cannot be instantiated directly.-> Method with body or wihtout body
+```php
+<?php
+// Abstract class
+abstract class Animal {
+    abstract public function sound(); // abstract method (no body)
+
+    public function sleep() {
+        echo "Sleeping...<br>";
+    }
+}
+
+// Child class must implement abstract method
+class Dog extends Animal {
+    public function sound() {
+        echo "Bark!<br>";
+    }
+}
+
+class Cat extends Animal {
+    public function sound() {
+        echo "Meow!<br>";
+    }
+}
+
+$dog = new Dog();
+$dog->sound(); // Bark!
+$dog->sleep(); // Sleeping...
+
+$cat = new Cat();
+$cat->sound(); // Meow!
+?>
+```
