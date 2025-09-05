@@ -392,3 +392,20 @@ FROM employees
 ORDER BY salary DESC
 LIMIT 1 OFFSET n-1;
 ```
+#### 2. Duplicate Email
+```sql
+SELECT email, COUNT(*) 
+FROM users 
+GROUP BY email 
+HAVING COUNT(*) > 1;
+```
+#### 3. Delete duplictae but keep one
+
+```sql
+DELETE e1 
+FROM employees e1
+JOIN employees e2 
+ON e1.email = e2.email 
+WHERE e1.id > e2.id;
+
+``` 
