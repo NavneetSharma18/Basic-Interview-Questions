@@ -207,3 +207,26 @@ $dog = new Dog("Tommy");
 $dog->speak(); // Output: Tommy barks!
 ?>
 ```
+### 4. Traits:- A Trait is like a container of methods that you can include in multiple classes.If two trait have same mehtod then you can resolve conflicts with insteadof-> USE A,B
+```php
+<?php
+trait A {
+    public function sayHello() { echo "Hello from A<br>"; }
+}
+
+trait B {
+    public function sayHello() { echo "Hello from B<br>"; }
+}
+
+class MyClass {
+    use A, B {
+        A::sayHello insteadof B;   // Use A’s method
+        B::sayHello as sayHelloB;  // Alias B’s method
+    }
+}
+
+$obj = new MyClass();
+$obj->sayHello();   // Hello from A
+$obj->sayHelloB();  // Hello from B
+
+```
