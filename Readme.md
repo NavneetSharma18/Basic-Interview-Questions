@@ -383,3 +383,12 @@ Memento → Captures and restores object state.
 Visitor → Adds new operations without changing classes.
 
 # 🔹   MYSQL
+
+#### 1. Nth Salary 
+
+```sql
+SELECT DISTINCT salary
+FROM employees
+ORDER BY salary DESC
+LIMIT 1 OFFSET n-1;
+```
