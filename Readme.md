@@ -263,3 +263,29 @@ $cat = new Cat();
 $cat->sound(); // Meow!
 ?>
 ```
+### 6. Interface:- Only abstract methods (till PHP 7.x). From PHP 8 → can have default methods. Property Not allowed -> implement multiple
+```php
+<?php
+interface PaymentGateway {
+    public function pay($amount);
+}
+
+class PayPal implements PaymentGateway {
+    public function pay($amount) {
+        echo "Paid $amount using PayPal.<br>";
+    }
+}
+
+class Stripe implements PaymentGateway {
+    public function pay($amount) {
+        echo "Paid $amount using Stripe.<br>";
+    }
+}
+
+$payment1 = new PayPal();
+$payment1->pay(100);
+
+$payment2 = new Stripe();
+$payment2->pay(200);
+?>
+```
