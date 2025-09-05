@@ -297,4 +297,38 @@ $payment2->pay(200);
 ### 9.Final Keyword:- final class → Cannot be inherited.final method → Cannot be overridden.
 ### 10.Namespace:- Avoids class/method name conflicts.Declared with namespace keyword.
 
+# 🔹  Sotware Design Methdologies
 
+### 1. WaterFall Model SDLC phase
+### 2. Agile ->iterative approch
+### 3. Scrum ->daily sprint (2-4 weeks)
+
+# 🔹   Design Pattern
+
+## Creational Patterns
+Singleton → Ensures only one instance of a class exists.
+Factory Method → Creates objects without exposing the instantiation logic.
+Abstract Factory → Creates families of related objects.
+Builder → Step-by-step object creation.
+Prototype → Clone objects instead of creating new ones.
+
+## Structural Patterns
+Adapter → Bridges between incompatible interfaces.
+Decorator → Adds new behavior without altering original class.
+Facade → Provides a simplified interface to a complex system.
+Proxy → Acts as a placeholder to control access to another object.
+Composite → Treats individual objects and groups of objects uniformly.
+Bridge → Decouples abstraction from implementation.
+Flyweight → Reduces memory by sharing common objects.
+
+## Behavioral Patterns
+Observer → Notifies multiple objects when state changes (e.g., Event listeners).
+Strategy → Selects algorithm/behavior at runtime.
+Command → Encapsulates requests as objects.
+State → Changes behavior based on object state.
+Template Method → Defines skeleton of an algorithm, lets subclasses override steps.
+Iterator → Provides a way to access collection elements sequentially.
+Mediator → Defines communication between objects through a central mediator.
+Chain of Responsibility → Passes a request through a chain of handlers.
+Memento → Captures and restores object state.
+Visitor → Adds new operations without changing classes.
