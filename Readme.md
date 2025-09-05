@@ -289,3 +289,12 @@ $payment2 = new Stripe();
 $payment2->pay(200);
 ?>
 ```
+### 7.Magic Methods in PHP:- __construct(), __destruct(), __get(), __set(), __call(), __toString()
+#### __get() is a magic method that is automatically called when you try to access an inaccessible (private/protected/non-existing) property of an object.
+#### __set() when you try to set a value to an inaccessible property
+
+### 8.Static Keyword:- Belongs to the class, not object.Accessed using ClassName::methodName().
+### 9.Final Keyword:- final class → Cannot be inherited.final method → Cannot be overridden.
+### 10.Namespace:- Avoids class/method name conflicts.Declared with namespace keyword.
+
+
