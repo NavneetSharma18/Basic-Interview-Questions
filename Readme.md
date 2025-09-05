@@ -179,3 +179,31 @@ print_r($uniqArr);
     $account->withdraw(200);
 We can't access balance directly $account->balance that will hide the internal state  
 ```
+### 3. Inheritance:- Reusing a parent class by extending.
+```php
+<?php
+// Parent class
+class Animal {
+    public $name;
+
+    public function __construct($name) {
+        $this->name = $name;
+    }
+
+    public function speak() {
+        echo $this->name . " makes a sound.<br>";
+    }
+}
+
+// Child class (inherits Animal)
+class Dog extends Animal {
+    public function speak() {
+        echo $this->name . " barks!<br>";
+    }
+}
+
+// Usage
+$dog = new Dog("Tommy");
+$dog->speak(); // Output: Tommy barks!
+?>
+```
