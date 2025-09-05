@@ -296,6 +296,55 @@ $payment2->pay(200);
 ### 8.Static Keyword:- Belongs to the class, not object.Accessed using ClassName::methodName().
 ### 9.Final Keyword:- final class → Cannot be inherited.final method → Cannot be overridden.
 ### 10.Namespace:- Avoids class/method name conflicts.Declared with namespace keyword.
+### 11. Facade:- It acts like a front desk in a hotel → instead of you talking to housekeeping, kitchen, or maintenance separately, you just talk to the front desk (Facade), and they handle the complexity behind the scenes.To hide system complexity from the client.To reduce coupling between client code and subsystem classes.
+
+```php
+<?php
+// Subsystem classes
+class Order {
+    public function placeOrder($item) {
+        echo "Order placed for: $item<br>";
+    }
+}
+
+class Payment {
+    public function makePayment($amount) {
+        echo "Payment of $amount successful<br>";
+    }
+}
+
+class Delivery {
+    public function scheduleDelivery($item) {
+        echo "Delivery scheduled for: $item<br>";
+    }
+}
+
+// Facade class
+class FoodOrderingFacade {
+    private $order;
+    private $payment;
+    private $delivery;
+
+    public function __construct() {
+        $this->order = new Order();
+        $this->payment = new Payment();
+        $this->delivery = new Delivery();
+    }
+
+    public function placeOrder($item, $amount) {
+        $this->order->placeOrder($item);
+        $this->payment->makePayment($amount);
+        $this->delivery->scheduleDelivery($item);
+        echo "Order process completed!<br>";
+    }
+}
+
+// Client code (simple!)
+$facade = new FoodOrderingFacade();
+$facade->placeOrder("Pizza", 500);
+?>
+
+```
 
 # 🔹  Sotware Design Methdologies
 
