@@ -296,7 +296,7 @@ $payment2->pay(200);
 ### 8.Static Keyword:- Belongs to the class, not object.Accessed using ClassName::methodName().
 ### 9.Final Keyword:- final class → Cannot be inherited.final method → Cannot be overridden.
 ### 10.Namespace:- Avoids class/method name conflicts.Declared with namespace keyword.
-### 11. Facade:- It acts like a front desk in a hotel → instead of you talking to housekeeping, kitchen, or maintenance separately, you just talk to the front desk (Facade), and they handle the complexity behind the scenes.To hide system complexity from the client.To reduce coupling between client code and subsystem classes.
+### 11. Facade:- It acts like a front desk in a hotel → instead of you talking to housekeeping, kitchen, or maintenance separately, you just talk to the front desk (Facade), and they handle the complexity behind the scenes.To hide system complexity from the client.To reduce coupling between client code and subsystem classes.Single point of access for multiple services.
 
 ```php
 <?php
