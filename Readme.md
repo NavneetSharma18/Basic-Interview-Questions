@@ -409,3 +409,103 @@ ON e1.email = e2.email
 WHERE e1.id > e2.id;
 
 ``` 
+```sql
+SELECT DATE_ADD('2025-09-05', INTERVAL 10 DAY);   -- 2025-09-15
+SELECT DATE_SUB('2025-09-05', INTERVAL 2 MONTH);  -- 2025-07-05
+
+SELECT NOW();        -- 2025-09-05 11:35:20 (current date & time)
+SELECT CURDATE();    -- 2025-09-05 (current date only)
+SELECT CURTIME();    -- 11:35:20 (current time only)
+
+```
+
+What is the difference between MySQL and SQL?
+
+What is the difference between DELETE, TRUNCATE, and DROP?
+
+What are primary key, foreign key, unique key, and index?
+
+Difference between CHAR and VARCHAR datatypes.
+
+What is the difference between INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN?
+
+What is a view in MySQL? Why is it used?
+
+Difference between WHERE and HAVING clause.
+
+What is the difference between BETWEEN and IN operators?
+
+Difference between UNION and UNION ALL.
+
+What are constraints in MySQL?
+
+🔹 Indexing & Optimization
+
+What is an index? Types of indexes in MySQL.
+
+What is the difference between clustered and non-clustered index?
+
+What is a composite index?
+
+How does indexing improve performance? What are its drawbacks?
+
+What is the EXPLAIN command?
+
+🔹 Transactions & Locks
+
+What is a transaction in MySQL? Properties of ACID.
+
+What are SAVEPOINT and ROLLBACK?
+
+Difference between LOCK and TRANSACTION.
+
+What are deadlocks? How to prevent them?
+
+What is the difference between implicit and explicit transactions?
+
+🔹 Stored Programs
+
+What are stored procedures? Advantages?
+
+What are triggers? Use cases?
+
+Difference between function and procedure in MySQL.
+
+What is the difference between before trigger and after trigger?
+
+What is a cursor in MySQL?
+
+🔹 Advanced Topics
+
+What is normalization? Different normal forms (1NF, 2NF, 3NF, BCNF).
+
+Difference between denormalization and normalization.
+
+What is sharding and partitioning in MySQL?
+
+What is the difference between MyISAM and InnoDB engines?
+
+What is the difference between OLTP and OLAP databases?
+
+Explain replication in MySQL. Types?
+
+What is read replica and when is it used?
+
+What is a temporary table?
+
+What is the difference between scalar subquery and correlated subquery?
+
+What is a CTE (Common Table Expression) and how is it different from a subquery?
+
+🔹 Security & Administration
+
+How do you create a user in MySQL?
+
+Difference between GRANT and REVOKE.
+
+What is the difference between root user and normal user in MySQL?
+
+How can you secure a MySQL database?
+
+What is SQL injection and how do you prevent it?
+
