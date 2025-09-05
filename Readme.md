@@ -381,3 +381,5 @@ Mediator → Defines communication between objects through a central mediator.
 Chain of Responsibility → Passes a request through a chain of handlers.
 Memento → Captures and restores object state.
 Visitor → Adds new operations without changing classes.
+
+# 🔹   MYSQL
