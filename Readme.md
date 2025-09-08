@@ -419,93 +419,30 @@ SELECT CURTIME();    -- 11:35:20 (current time only)
 
 ```
 
-What is the difference between MySQL and SQL?
+#### 4. What are primary key, foreign key, unique key, and index?
+Primary:- Cannot contain NULL values. Must be unique.
+Foreign:- A column (or group of columns) in one table that refers to the primary key in another table.
+Unique:- You can have multiple unique keys per table.
+Index:- A data structure (like a lookup) that improves the speed of data retrieval
+    
+    Primary index → created automatically with primary key.
+    Unique index → ensures uniqueness.
+    Composite index → on multiple columns.
+    Full-text index → for searching text.
 
-What is the difference between DELETE, TRUNCATE, and DROP?
+#### 5. What is the difference between INNER JOIN (Common in both table), LEFT JOIN (Returns all rows from the left table), RIGHT JOIN (Returns all rows from the right table), and FULL JOIN (All row form both table via UNION)?
 
-What are primary key, foreign key, unique key, and index?
+#### 6. Difference between UNION and UNION ALL (Union All keep duplicate where Union remove duplicate record)
 
-Difference between CHAR and VARCHAR datatypes.
+#### 7. What is an index? Types of indexes in MySQL. (Primary Key Index, Unique Index, Composite Key Index, Clustered auto created when Primary key created, Non Clustered all other index like primary, composite, unique is non clustered)
 
-What is the difference between INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN?
+####  8. Explain in MYSQL query
 
-What is a view in MySQL? Why is it used?
+- Which indexes are used
+- Join order (which table is read first, then second, etc.)
+- Estimated rows scanned
+- Type of join (e.g., index scan, full table scan)
+Helps developers debug slow queries and improve performance.
 
-Difference between WHERE and HAVING clause.
-
-What is the difference between BETWEEN and IN operators?
-
-Difference between UNION and UNION ALL.
-
-What are constraints in MySQL?
-
-🔹 Indexing & Optimization
-
-What is an index? Types of indexes in MySQL.
-
-What is the difference between clustered and non-clustered index?
-
-What is a composite index?
-
-How does indexing improve performance? What are its drawbacks?
-
-What is the EXPLAIN command?
-
-🔹 Transactions & Locks
-
-What is a transaction in MySQL? Properties of ACID.
-
-What are SAVEPOINT and ROLLBACK?
-
-Difference between LOCK and TRANSACTION.
-
-What are deadlocks? How to prevent them?
-
-What is the difference between implicit and explicit transactions?
-
-🔹 Stored Programs
-
-What are stored procedures? Advantages?
-
-What are triggers? Use cases?
-
-Difference between function and procedure in MySQL.
-
-What is the difference between before trigger and after trigger?
-
-What is a cursor in MySQL?
-
-🔹 Advanced Topics
-
-What is normalization? Different normal forms (1NF, 2NF, 3NF, BCNF).
-
-Difference between denormalization and normalization.
-
-What is sharding and partitioning in MySQL?
-
-What is the difference between MyISAM and InnoDB engines?
-
-What is the difference between OLTP and OLAP databases?
-
-Explain replication in MySQL. Types?
-
-What is read replica and when is it used?
-
-What is a temporary table?
-
-What is the difference between scalar subquery and correlated subquery?
-
-What is a CTE (Common Table Expression) and how is it different from a subquery?
-
-🔹 Security & Administration
-
-How do you create a user in MySQL?
-
-Difference between GRANT and REVOKE.
-
-What is the difference between root user and normal user in MySQL?
-
-How can you secure a MySQL database?
-
-What is SQL injection and how do you prevent it?
-
+#### 9. Stored procedure:- A stored procedure is a set of SQL statements that are saved and stored in the database server.
+#### 10. Trigger:- Special program that will execute when certain event occure like befor insert, after delete etc.
